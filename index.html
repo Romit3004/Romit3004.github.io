@@ -5,46 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Romit Gaikwad | Frontend Developer</title>
   <style>
+    /* Reset & Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body, html {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       scroll-behavior: smooth;
-    }
-
-    section {
-      padding: 60px 20px;
+      background-color: #111;
       color: white;
-      text-align: center;
     }
 
+    /* Parallax Sections */
     .parallax {
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      padding: 100px 20px;
+      text-align: center;
     }
 
     .bg1 { background-image: url('bg1.jpg'); height: 100vh; }
-    .bg2 { background-image: url('bg2.jpg'); height: 70vh; }
-    .bg3 { background-image: url('bg3.jpg'); height: 70vh; }
+    .bg2 { background-image: url('bg2.jpg'); }
+    .bg3 { background-image: url('bg3.jpg'); }
 
+    /* Content Section */
     .content {
-      background-color: #111;
-      padding: 40px 20px;
+      padding: 60px 20px;
+      background-color: #1e1e1e;
+      text-align: center;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       margin-bottom: 20px;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
-    li {
-      margin: 10px 0;
-    }
+    ul { list-style: none; padding: 0; }
 
     a {
       color: #00ffff;
@@ -53,16 +53,43 @@
 
     .button {
       display: inline-block;
+      margin-top: 20px;
       padding: 10px 20px;
       background-color: #00aaff;
+      border: none;
       color: white;
       border-radius: 5px;
-      text-decoration: none;
-      margin-top: 20px;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    @media(max-width: 768px){
-      .parallax { background-attachment: scroll; }
+    .button:hover {
+      background-color: #0088cc;
+    }
+
+    /* Animations */
+    .animate {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1.2s forwards;
+    }
+
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .parallax {
+        background-attachment: scroll;
+      }
     }
   </style>
 </head>
@@ -70,21 +97,21 @@
 
   <!-- Hero Section -->
   <section class="parallax bg1">
-    <h1>Romit Gaikwad</h1>
-    <p>Frontend Developer | React Enthusiast | Problem Solver</p>
-    <a href="#projects" class="button">View Projects</a>
+    <h1 class="animate delay-1">Romit Gaikwad</h1>
+    <p class="animate delay-2">Frontend Developer | React Enthusiast</p>
+    <a href="#projects" class="button animate delay-3">View Projects</a>
   </section>
 
   <!-- Summary -->
   <section class="content">
-    <h2>Summary</h2>
-    <p>Enthusiastic Frontend Developer experienced in building responsive, interactive apps using HTML, CSS, JavaScript, and React. Passionate about clean UI, performance optimization, and integrating backend services.</p>
+    <h2 class="animate delay-1">Summary</h2>
+    <p class="animate delay-2">Enthusiastic Frontend Developer experienced in building responsive, interactive apps using HTML, CSS, JavaScript, and React. Passionate about clean UI, performance optimization, and integrating backend services.</p>
   </section>
 
   <!-- Skills -->
   <section class="parallax bg2">
-    <h2>Skills</h2>
-    <ul>
+    <h2 class="animate delay-1">Skills</h2>
+    <ul class="animate delay-2">
       <li><strong>Languages:</strong> C, C++, JavaScript</li>
       <li><strong>Frontend:</strong> HTML, CSS, React</li>
       <li><strong>Database:</strong> MongoDB, MySQL</li>
@@ -95,19 +122,28 @@
 
   <!-- Projects -->
   <section class="content" id="projects">
-    <h2>Projects</h2>
-    <h3>Student Portal</h3>
-    <p>Built a full-stack student management system with role-based access, dashboards, REST APIs, and MongoDB backend.</p>
-    <h3>Quiz App</h3>
-    <p>Interactive quiz platform with timer, leaderboard, and responsive design. Utilized localStorage/sessionStorage for data persistence.</p>
-    <h3>Faculty Management System</h3>
-    <p>Automated platform for managing faculty profiles, schedules, and attendance with admin-level access and calendar tools.</p>
+    <h2 class="animate delay-1">Projects</h2>
+
+    <div class="animate delay-2">
+      <h3>Student Portal</h3>
+      <p>Built a full-stack student management system with role-based access, dashboards, REST APIs, and MongoDB backend.</p>
+    </div>
+
+    <div class="animate delay-3">
+      <h3>Quiz App</h3>
+      <p>Interactive quiz platform with timer, leaderboard, and responsive design. Utilized localStorage/sessionStorage for data persistence.</p>
+    </div>
+
+    <div class="animate delay-2">
+      <h3>Faculty Management System</h3>
+      <p>Automated platform for managing faculty profiles, schedules, and attendance with admin-level access and calendar tools.</p>
+    </div>
   </section>
 
   <!-- Achievements -->
   <section class="parallax bg3">
-    <h2>Achievements & Roles</h2>
-    <ul>
+    <h2 class="animate delay-1">Achievements & Roles</h2>
+    <ul class="animate delay-2">
       <li>Technical Lead – GDSC (Google Developer Student’s Club)</li>
       <li>Coordinator – E-Cell (2022–2024)</li>
       <li>Top 5% – Google Front-End Crash Course Challenge 2024</li>
@@ -117,10 +153,10 @@
 
   <!-- Contact -->
   <section class="content">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:romitgaikwad2003@gmail.com">romitgaikwad2003@gmail.com</a></p>
-    <p>Phone: +91-7715973843</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/romitgaikwad">linkedin.com/in/romitgaikwad</a></p>
+    <h2 class="animate delay-1">Contact Me</h2>
+    <p class="animate delay-2">Email: <a href="mailto:romitgaikwad2003@gmail.com">romitgaikwad2003@gmail.com</a></p>
+    <p class="animate delay-3">Phone: +91-7715973843</p>
+    <p class="animate delay-2">LinkedIn: <a href="https://linkedin.com/in/romitgaikwad">linkedin.com/in/romitgaikwad</a></p>
   </section>
 
 </body>
