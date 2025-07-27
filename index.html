@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Romit Gaikwad | Frontend Developer</title>
+  <title>Romit Gaikwad | Frontend Developer | React Developer Portfolio</title>
+  <meta name="description" content="Romit Gaikwad is a passionate frontend developer skilled in React, JavaScript, and building responsive, interactive web apps. Check out his portfolio, projects, and achievements.">
+  <meta name="keywords" content="Romit Gaikwad, frontend developer, React developer, web developer Mumbai, JavaScript developer, HTML CSS, MERN stack, portfolio, projects, developer resume, UI developer">
+  <meta name="author" content="Romit Gaikwad">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Romit Gaikwad | Frontend Developer Portfolio">
+  <meta property="og:description" content="Explore Romit Gaikwad's frontend developer portfolio featuring React projects, technical skills, and achievements.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="https://yourdomain.com/thumbnail.jpg">
+
   <style>
-    /* Reset & Base Styles */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body, html {
       font-family: 'Segoe UI', sans-serif;
@@ -14,7 +24,6 @@
       color: white;
     }
 
-    /* Parallax Sections */
     .parallax {
       background-attachment: fixed;
       background-size: cover;
@@ -28,17 +37,13 @@
     .bg2 { background-image: url('bg2.jpg'); }
     .bg3 { background-image: url('bg3.jpg'); }
 
-    /* Content Section */
     .content {
       padding: 60px 20px;
       background-color: #1e1e1e;
       text-align: center;
     }
 
-    h1, h2, h3 {
-      margin-bottom: 20px;
-    }
-
+    h1, h2, h3 { margin-bottom: 20px; }
     p, li {
       font-size: 1rem;
       line-height: 1.6;
@@ -85,7 +90,6 @@
       }
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       .parallax {
         background-attachment: scroll;
@@ -95,69 +99,75 @@
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="parallax bg1">
-    <h1 class="animate delay-1">Romit Gaikwad</h1>
-    <p class="animate delay-2">Frontend Developer | React Enthusiast</p>
-    <a href="#projects" class="button animate delay-3">View Projects</a>
-  </section>
+  <main>
 
-  <!-- Summary -->
-  <section class="content">
-    <h2 class="animate delay-1">Summary</h2>
-    <p class="animate delay-2">Enthusiastic Frontend Developer experienced in building responsive, interactive apps using HTML, CSS, JavaScript, and React. Passionate about clean UI, performance optimization, and integrating backend services.</p>
-  </section>
+    <!-- Hero -->
+    <section class="parallax bg1" aria-label="Hero Image of Romit Gaikwad">
+      <h1 class="animate delay-1">Romit Gaikwad</h1>
+      <p class="animate delay-2">Frontend Developer | React Enthusiast | UI Designer</p>
+      <a href="#projects" class="button animate delay-3">View Projects</a>
+    </section>
 
-  <!-- Skills -->
-  <section class="parallax bg2">
-    <h2 class="animate delay-1">Skills</h2>
-    <ul class="animate delay-2">
-      <li><strong>Languages:</strong> C, C++, JavaScript</li>
-      <li><strong>Frontend:</strong> HTML, CSS, React</li>
-      <li><strong>Database:</strong> MongoDB, MySQL</li>
-      <li><strong>Tools:</strong> Git, GitHub</li>
-      <li><strong>Soft Skills:</strong> Creativity, Problem Solving, Clarity of Thinking</li>
-    </ul>
-  </section>
+    <!-- Summary -->
+    <section class="content">
+      <article>
+        <h2 class="animate delay-1">Summary</h2>
+        <p class="animate delay-2">Enthusiastic Frontend Developer with experience in responsive, interactive web apps using HTML, CSS, JavaScript, and React. Passionate about UI/UX, performance optimization, and backend integration.</p>
+      </article>
+    </section>
 
-  <!-- Projects -->
-  <section class="content" id="projects">
-    <h2 class="animate delay-1">Projects</h2>
+    <!-- Skills -->
+    <section class="parallax bg2" aria-label="Romit Gaikwad's technical skills">
+      <h2 class="animate delay-1">Skills</h2>
+      <ul class="animate delay-2">
+        <li><strong>Languages:</strong> C, C++, JavaScript</li>
+        <li><strong>Frontend:</strong> HTML, CSS, React</li>
+        <li><strong>Databases:</strong> MongoDB, MySQL</li>
+        <li><strong>Tools:</strong> Git, GitHub</li>
+        <li><strong>Soft Skills:</strong> Creativity, Problem Solving, Clarity of Thinking</li>
+      </ul>
+    </section>
 
-    <div class="animate delay-2">
-      <h3>Student Portal</h3>
-      <p>Built a full-stack student management system with role-based access, dashboards, REST APIs, and MongoDB backend.</p>
-    </div>
+    <!-- Projects -->
+    <section class="content" id="projects">
+      <h2 class="animate delay-1">Projects</h2>
 
-    <div class="animate delay-3">
-      <h3>Quiz App</h3>
-      <p>Interactive quiz platform with timer, leaderboard, and responsive design. Utilized localStorage/sessionStorage for data persistence.</p>
-    </div>
+      <article class="animate delay-2">
+        <h3>Student Portal</h3>
+        <p>Developed a full-stack portal for managing student records using MongoDB and REST APIs. Included dashboards and secure login.</p>
+      </article>
 
-    <div class="animate delay-2">
-      <h3>Faculty Management System</h3>
-      <p>Automated platform for managing faculty profiles, schedules, and attendance with admin-level access and calendar tools.</p>
-    </div>
-  </section>
+      <article class="animate delay-3">
+        <h3>Quiz App</h3>
+        <p>Responsive quiz application with timer, category filters, leaderboards, and local/session storage for state management.</p>
+      </article>
 
-  <!-- Achievements -->
-  <section class="parallax bg3">
-    <h2 class="animate delay-1">Achievements & Roles</h2>
-    <ul class="animate delay-2">
-      <li>Technical Lead – GDSC (Google Developer Student’s Club)</li>
-      <li>Coordinator – E-Cell (2022–2024)</li>
-      <li>Top 5% – Google Front-End Crash Course Challenge 2024</li>
-      <li>Open-Source Contributor – GitHub</li>
-    </ul>
-  </section>
+      <article class="animate delay-2">
+        <h3>Faculty Management System</h3>
+        <p>Admin platform for managing faculty profiles, schedules, and timetables with calendar integration and automation features.</p>
+      </article>
+    </section>
 
-  <!-- Contact -->
-  <section class="content">
-    <h2 class="animate delay-1">Contact Me</h2>
-    <p class="animate delay-2">Email: <a href="mailto:romitgaikwad2003@gmail.com">romitgaikwad2003@gmail.com</a></p>
-    <p class="animate delay-3">Phone: +91-7715973843</p>
-    <p class="animate delay-2">LinkedIn: <a href="https://linkedin.com/in/romitgaikwad">linkedin.com/in/romitgaikwad</a></p>
-  </section>
+    <!-- Achievements -->
+    <section class="parallax bg3" aria-label="Achievements">
+      <h2 class="animate delay-1">Achievements & Roles</h2>
+      <ul class="animate delay-2">
+        <li>Technical Lead – GDSC (Google Developer Student’s Club)</li>
+        <li>Coordinator – E-Cell (2022–2024)</li>
+        <li>Top 5% – Google Front-End Crash Course Challenge 2024</li>
+        <li>Open-Source Contributor – GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="content">
+      <h2 class="animate delay-1">Contact</h2>
+      <p class="animate delay-2">Email: <a href="mailto:romitgaikwad2003@gmail.com">romitgaikwad2003@gmail.com</a></p>
+      <p class="animate delay-3">Phone: +91-7715973843</p>
+      <p class="animate delay-2">LinkedIn: <a href="https://linkedin.com/in/romitgaikwad" target="_blank">linkedin.com/in/romitgaikwad</a></p>
+    </section>
+
+  </main>
 
 </body>
 </html>
